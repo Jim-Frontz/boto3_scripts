@@ -10,7 +10,7 @@ This script finds all Hyperplane Elastic Network Interfaces (ENIs) in use across
 
 ### Identify KMS Stressors (`identify_stressors.py`)
 
-This script searches AWS CloudTrail for AWS Key Management Service (KMS) decrypt actions over the last 24 hours. It identifies the top 10 users or services based on the number of decrypt events, which can help in identifying potential stressors or unusual activity. This can be retrofit to a variety of services and events.
+This script searches AWS CloudTrail for AWS Key Management Service (KMS) decrypt actions over the last 24 hours. It identifies the top 10 users or services based on the number of decrypt events, which can help in identifying potential stressors or unusual activity. This can be retrofit to a variety of services and events. Warning: This can time out with too much data.
 
 ### Security Hub Access (`security_hub_access.py`)
 
